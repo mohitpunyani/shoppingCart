@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addItem } from "../store/CartSlice.js";
+import { addItem } from "../store/cartSlice.js";
 
 const products = [
   { id: 1, name: "Laptop", price: 50000 },
