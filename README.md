@@ -87,6 +87,95 @@ UI (Buttons / Components)
         ↓ dispatch(action)
 Redux Slice (CartSlice)
         ↓ reducer updates state 
+Redux Store<div align="center">
+
+# 🛒 Shopping Cart
+
+### A modern, responsive shopping cart built with React, Redux Toolkit, and Tailwind CSS
+
+[![React](https://img.shields.io/badge/React-19.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-2.11.2-764ABC?style=for-the-badge&logo=redux&logoColor=white)](https://redux-toolkit.js.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.18-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-7.2.5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+
+</div>
+
+---
+
+## ✨ Features
+
+- 🎨 **Modern UI Design** - Clean, Google-inspired interface with smooth animations
+- 🛍️ **Product Catalog** - Browse and add products to your cart
+- ➕ **Quantity Management** - Increase/decrease item quantities with intuitive controls
+- 🗑️ **Remove Items** - Easy item removal from cart
+- 💰 **Real-time Total** - Automatic price calculation
+- ✅ **Checkout Modal** - Beautiful confirmation dialog with order summary
+- 📱 **Fully Responsive** - Works seamlessly on all device sizes
+- ⚡ **Fast Performance** - Built with Vite for lightning-fast development
+- 🔄 **State Management** - Redux Toolkit for predictable state updates
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd CartRedux
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   ```
+   Navigate to http://localhost:5173
+   ```
+
+---
+
+## 📦 Project Structure
+
+```
+CartRedux/
+├── src/
+│   ├── components/
+│   │   ├── Cart.jsx           # Shopping cart component
+│   │   └── ProductList.jsx    # Product catalog component
+│   ├── store/
+│   │   ├── CartSlice.js       # Redux slice for cart state
+│   │   └── store.js           # Redux store configuration
+│   ├── App.jsx                # Main application component
+│   ├── App.css                # Global styles (Tailwind import)
+│   └── main.jsx               # Application entry point
+├── index.html                 # HTML template
+├── package.json               # Project dependencies
+└── vite.config.js             # Vite configuration
+```
+
+---
+
+## 🔄 Redux Data Flow
+
+```
+UI (Buttons / Components)
+        ↓ dispatch(action)
+Redux Slice (CartSlice)
+        ↓ reducer updates state 
 Redux Store
         ↓ useSelector()
 UI re-renders with new data
